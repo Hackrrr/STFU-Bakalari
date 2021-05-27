@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "STFU Bakaláři",
+    "version": "1.0",
+
+    "description": "Sada několika málo funkcí, aby se dali Bakaláři alespoň trochu normálně používat...",
+
+    "icons": {
+        "48": "images/bakalari48.png",
+        "96": "images/bakalari96.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://bakalari.skola.cz/*"],
+            "js": ["STFU Bakalari.js"]
+        }
+    ]
+}
